@@ -1,5 +1,6 @@
 import React from "react";
-import photo from "@/assets/CLEANING.png";
+import cleaning1 from "@/assets/cleaning1.png";
+import cleaning2 from "@/assets/cleaning2.png";
 
 export default function Choose() {
     return (
@@ -34,8 +35,8 @@ export default function Choose() {
                     </div>
                 </div>
                 <div className="choose-photo">
-                    <img src={photo} alt="Why choose us?" />
-                    <img src={photo} alt="Why choose us?" />
+                    <img className="cleaning-photo" src={cleaning1} alt="Why choose us?" />
+                    <img src={cleaning2} alt="Why choose us?" />
                 </div>
             </div>
         </section>
