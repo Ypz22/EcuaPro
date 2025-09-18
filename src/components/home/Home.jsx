@@ -3,7 +3,6 @@ import Hero from "./hero/Hero";
 import Introduccion from "./introduction/Introduccion";
 import Who from "./who/Who";
 import Choose from "./choose/Choose";
-import photo from "@/assets/FOTOCONFRASE.jpg";
 import BeforeAfter from "./beforeAfter/BeforeAfter";
 
 export default function Home() {
@@ -13,7 +12,9 @@ export default function Home() {
             <Introduccion />
             <Who />
             <Choose />
-            <img className="phrase-img" src={photo} alt="Your home clean, your free time" />
+            <div className="slogan">
+                <h2>“Your home clean, your free time”</h2>
+            </div>
             <BeforeAfter />
         </div>
     );

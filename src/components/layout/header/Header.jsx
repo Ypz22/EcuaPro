@@ -1,16 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "@/assets/LOGO.png";
 
 export default function Header() {
+    const navigate = useNavigate();
     return (
         <header>
-            <img className="logo" src={logo} alt="logo Ecua Pro" />
+            <img onClick={() => { navigate("/home") }} className="logo" src={logo} alt="logo Ecua Pro" />
             <nav>
                 <ul>
-                    <li>HOME</li>
+                    <li onClick={() => { navigate("/home") }}>HOME</li>
                     <li>SERVICE</li>
                     <li>GALLERY</li>
-                    <li>CONTACT US</li>
+                    <li onClick={() => { navigate("/contact") }}>CONTACT US</li>
                 </ul>
             </nav>
         </header>
