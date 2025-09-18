@@ -129,8 +129,9 @@ header ul {
   gap: 1rem;
 }
 
-.content-introduction * {
-  margin-bottom: 1rem;
+.content-introduction p {
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .content-introduction h3 {
