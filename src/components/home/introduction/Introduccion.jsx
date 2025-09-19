@@ -19,7 +19,7 @@ export default function Introduccion() {
                         each service to suit your specific needs, whether you're looking for
                         daily, weekly, or bi-weekly cleaning.
                     </p>
-                    <button>Call us today!</button>
+                    <button onClick={() => { navigate("/contact") }}>Call us today!</button>
                 </div>
                 <div className="img-introduction">
                     <img src={cleaning} alt="Cleaning service" />
