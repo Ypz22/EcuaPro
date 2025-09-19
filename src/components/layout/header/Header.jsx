@@ -10,8 +10,8 @@ export default function Header() {
             <nav>
                 <ul>
                     <li onClick={() => { navigate("/home") }}>HOME</li>
-                    <li>SERVICE</li>
-                    <li>GALLERY</li>
+                    <li onClick={() => { navigate("/services") }}>SERVICE</li>
+                    <li onClick={() => { navigate("/gallery") }}>GALLERY</li>
                     <li onClick={() => { navigate("/contact") }}>CONTACT US</li>
                 </ul>
             </nav>

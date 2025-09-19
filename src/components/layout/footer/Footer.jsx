@@ -1,17 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "@/assets/LOGOBLANCO.png";
 import { FaTiktok, FaInstagram, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 export default function Footer() {
+    const navigate = useNavigate();
     return (
         <footer className="footer">
             <div className="content-footer">
                 <div className="content-nav">
                     <h3>Navigation</h3>
                     <ul>
-                        <li>HOME</li>
-                        <li>SERVICES</li>
-                        <li>GALLERY</li>
-                        <li>CONTACT US</li>
+                        <li onClick={() => { navigate("/home") }}>HOME</li>
+                        <li onClick={() => { navigate("/services") }}>SERVICES</li>
+                        <li onClick={() => { navigate("/gallery") }}>GALLERY</li>
+                        <li onClick={() => { navigate("/contact") }}>CONTACT US</li>
                     </ul>
                 </div>
                 <div className="content-services">

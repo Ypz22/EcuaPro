@@ -459,6 +459,10 @@ footer ul li {
   gap: .5rem;
 }
 
+.content-nav li {
+  cursor: pointer;
+}
+
 .content-social {
   display: flex;
   flex-direction: column;
