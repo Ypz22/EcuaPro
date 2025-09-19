@@ -11,7 +11,6 @@ export default function ImageComparison({ before, after }) {
                 className="image-comparison-slider"
                 itemOne={<ReactCompareSliderImage src={before} alt="Antes" />}
                 itemTwo={<ReactCompareSliderImage src={after} alt="Después" />}
-
             />
         </div>
     );
