@@ -1,7 +1,9 @@
 import React from "react";
 import cleaning from "@/assets/CLEANING.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Introduccion() {
+    const navigate = useNavigate();
     return (
         <section className="introduction">
             <div className="content-container">
