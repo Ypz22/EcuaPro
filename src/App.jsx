@@ -5,6 +5,7 @@ import Home from './components/home/Home'
 import Contact from './components/contact/Contact'
 import ScrollToTop from './components/layout/ScrollTop'
 import Gallery from './components/gallery/Gallery'
+import Services from './components/services/Services'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path='/gallery' element={<Gallery />} />
+            <Route path="/services" element={<Services />} />
           </Route>
         </Routes>
       </Router>

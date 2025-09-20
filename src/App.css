@@ -430,12 +430,12 @@ header ul li {
   background-position: center center;
   padding: 4rem 2rem;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   border-bottom: 4px solid var(--green-color);
 }
 
 .gallery-page h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 
@@ -513,12 +513,78 @@ header ul li {
   transition: transform 0.3s ease;
 }
 
+/* Services Styles */
+
+.services {
+  width: 100%;
+  padding-top: 6.5rem;
+}
+
+.services-page {
+  background-image: url("assets/FOTOSERVICIOS.png");
+
+}
+
+.services-page h2 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.services-page p {
+  font-size: 2.5rem;
+}
+
+.services-page-phrase {
+  font-weight: 500;
+}
+
+.services-page-phrase::after {
+  width: 40%;
+}
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0rem 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services-text h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--light-blue-color);
+}
+
+.services-text p {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-top: 1.5rem;
+}
+
+.services img {
+  margin-top: 4rem;
+}
+
+.plano {
+  width: 50%;
+}
+
+.imagen-plano {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 /* Footer Styles */
 
 footer {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 5rem;
   width: 100%;
   padding: 4rem;
   background-color: var(--black-footer-color);
