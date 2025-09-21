@@ -6,7 +6,7 @@ import {
 
 export default function ImageComparison({ before, after }) {
     return (
-        <div style={{ maxWidth: "800px", margin: "auto" }}>
+        <div className="image-comparison-container">
             <ReactCompareSlider
                 className="image-comparison-slider"
                 itemOne={<ReactCompareSliderImage src={before} alt="Antes" />}

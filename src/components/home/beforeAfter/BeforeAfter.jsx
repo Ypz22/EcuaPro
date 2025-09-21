@@ -1,9 +1,9 @@
 import React from "react";
 import ImageComparison from "./ImageComparision";
-import kitchenBefore from "@/assets/cocina.jpg";
-import kitchenAfter from "@/assets/cocina1.jpg";
-import bathroomBefore from "@/assets/baño.jpg";
-import bathroomAfter from "@/assets/baño1.jpg";
+import kitchenBefore from "@/assets/cocina.png";
+import kitchenAfter from "@/assets/cocina1.png";
+import bathroomBefore from "@/assets/baño.png";
+import bathroomAfter from "@/assets/baño1.png";
 import basinBefore from "@/assets/lavabo.jpg";
 import basinAfter from "@/assets/lavabo1.jpg";
 

@@ -9,10 +9,10 @@ import kitchenBefore from "@/assets/GALERIA/lavamano2.png";
 import kitchenAfter from "@/assets/GALERIA/lavamano2.1.png";
 import washbasinBefore from "@/assets/lavabo.jpg";
 import washbasinAfter from "@/assets/lavabo1.jpg";
-import toiletBefore from "@/assets/baño.jpg";
-import toiletAfter from "@/assets/baño1.jpg";
-import stoveBefore from "@/assets/cocina.jpg";
-import stoveAfter from "@/assets/cocina1.jpg";
+import toiletBefore from "@/assets/baño.png";
+import toiletAfter from "@/assets/baño1.png";
+import stoveBefore from "@/assets/cocina.png";
+import stoveAfter from "@/assets/cocina1.png";
 
 
 
