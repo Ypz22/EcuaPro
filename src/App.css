@@ -570,6 +570,8 @@ header ul li {
 }
 
 .plano {
+  position: relative;
+  display: inline-block;
   width: 50%;
 }
 
@@ -579,6 +581,219 @@ header ul li {
   object-fit: cover;
 }
 
+.label {
+  position: absolute;
+  background: var(--green-color);
+  color: var(--white-color);
+  font-weight: bold;
+  padding: 0.6em 1.2em;
+  border-radius: 20px 0px 20px 0;
+  font-size: clamp(12px, 1.5vw, 18px);
+  white-space: nowrap;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  background: orange;
+  z-index: 10;
+}
+
+.bathrooms {
+  top: 7rem;
+  left: -11.5rem;
+}
+
+.bathrooms-line {
+  top: 8.3rem;
+  left: -1rem;
+  width: 45%;
+}
+
+.bedrooms {
+  bottom: 7rem;
+  left: -11.5rem;
+}
+
+.bedrooms-line {
+  bottom: 8.3rem;
+  left: -1.8rem;
+  width: 20%;
+}
+
+.kitchen {
+  top: 8.7rem;
+  right: -11.4rem;
+}
+
+.kitchen-line {
+  top: 10rem;
+  right: -3.5rem;
+  width: 35%;
+}
+
+.living {
+  bottom: 8.7rem;
+  right: -12.8rem;
+}
+
+.living-line {
+  bottom: 10rem;
+  right: -2rem;
+  width: 30%;
+}
+
+.workstations {
+  top: 9.5rem;
+  left: -15.8rem;
+}
+
+.workstations-line {
+  top: 10.8rem;
+  left: -7.5%;
+  width: 60%;
+}
+
+.floors {
+  top: 10.3rem;
+  right: -18.2rem;
+}
+
+.floors-line {
+  top: 11.6rem;
+  right: -2.8rem;
+  width: 20%;
+}
+
+.meeting {
+  bottom: 10rem;
+  left: -15.8rem;
+}
+
+.meeting-line {
+  bottom: 11.3rem;
+  left: -4.1rem;
+  width: 60%;
+}
+
+.common {
+  bottom: 8rem;
+  right: -14.5rem;
+}
+
+.common-line {
+  bottom: 9.2rem;
+  right: -1.7rem;
+  width: 18%;
+}
+
+/* Modal Styles */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  background: var(--white-color);
+  border-radius: 100px 0px 100px 0px;
+  position: relative;
+  width: 70%;
+  max-height: 600px;
+  align-items: stretch;
+  box-sizing: border-box;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content-div {
+  width: 100%;
+  display: flex;
+}
+
+.modal-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.modal-image img {
+  position: relative;
+  top: -4rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100px 0px 0px 0px;
+}
+
+.modal-details {
+  padding: 3.5rem;
+  width: 80%;
+}
+
+.modal-details h3 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: var(--orange-color);
+}
+
+.modal-details h3::after {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 4px;
+  background-color: var(--light-blue-color);
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+}
+
+.modal-details ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-details ul li {
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.modal-details ul li::marker {
+  color: var(--green-color);
+  font-size: 2rem;
+}
 
 /* Footer Styles */
 
