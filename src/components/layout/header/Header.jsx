@@ -8,7 +8,6 @@ export default function Header() {
     const [initialized, setInitialized] = useState(false);
 
     useEffect(() => {
-        // Cuando el componente carga, activamos initialized
         setInitialized(true);
     }, []);
 
@@ -21,7 +20,6 @@ export default function Header() {
                 alt="logo Ecua Pro"
             />
 
-            {/* Botón hamburguesa */}
             <div
                 className={`hamburger ${menuOpen ? "active" : ""}`}
                 onClick={() => setMenuOpen(!menuOpen)}
@@ -31,7 +29,6 @@ export default function Header() {
                 <span></span>
             </div>
 
-            {/* Menú de navegación */}
             <nav className={`${menuOpen ? "open" : ""} ${initialized ? "animated" : ""}`}>
                 <ul>
                     <li onClick={() => setMenuOpen(false) || navigate("/home")}>HOME</li>

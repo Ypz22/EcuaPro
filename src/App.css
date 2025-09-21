@@ -230,7 +230,7 @@ header ul li {
 
 .content-who {
   flex: 1;
-  padding: 0rem 4rem;
+  padding: 1rem 4rem;
 }
 
 .content-who h3 {
@@ -647,7 +647,7 @@ header ul li {
   border-radius: 20px 0px 20px 0;
   font-size: clamp(12px, 1.5vw, 18px);
   white-space: nowrap;
-  z-index: 2;
+  z-index: 100;
   cursor: pointer;
 }
 
@@ -665,8 +665,8 @@ header ul li {
 
 .bathrooms-line {
   top: 8.3rem;
-  left: -1rem;
-  width: 45%;
+  left: -3rem;
+  width: 50%;
 }
 
 .bedrooms {
@@ -676,8 +676,8 @@ header ul li {
 
 .bedrooms-line {
   bottom: 8.3rem;
-  left: -1.8rem;
-  width: 20%;
+  left: -2.4rem;
+  width: 30%;
 }
 
 .kitchen {
@@ -687,8 +687,8 @@ header ul li {
 
 .kitchen-line {
   top: 10rem;
-  right: -3.5rem;
-  width: 35%;
+  right: -4rem;
+  width: 40%;
 }
 
 .living {
@@ -698,8 +698,8 @@ header ul li {
 
 .living-line {
   bottom: 10rem;
-  right: -2rem;
-  width: 30%;
+  right: -2.5rem;
+  width: 35%;
 }
 
 .workstations {
@@ -709,8 +709,8 @@ header ul li {
 
 .workstations-line {
   top: 10.8rem;
-  left: -7.5%;
-  width: 60%;
+  left: -4rem;
+  width: 70%;
 }
 
 .floors {
@@ -720,7 +720,7 @@ header ul li {
 
 .floors-line {
   top: 11.6rem;
-  right: -2.8rem;
+  right: -3.5rem;
   width: 20%;
 }
 
@@ -731,8 +731,8 @@ header ul li {
 
 .meeting-line {
   bottom: 11.3rem;
-  left: -4.1rem;
-  width: 60%;
+  left: -5rem;
+  width: 65%;
 }
 
 .common {
@@ -742,8 +742,8 @@ header ul li {
 
 .common-line {
   bottom: 9.2rem;
-  right: -1.7rem;
-  width: 18%;
+  right: -2.5rem;
+  width: 20%;
 }
 
 /* Modal Styles */
@@ -1162,6 +1162,17 @@ footer ul li {
     width: 100%;
     padding-left: 0;
   }
+
+  .content-logo::after {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--orange-color);
+    z-index: 2;
+  }
 }
 
 /* Mobile (up to 767px) */
@@ -1225,6 +1236,11 @@ footer ul li {
   .comparison-img,
   .after-wrapper img {
     height: auto;
+  }
+
+  .slogan {
+    font-size: 1rem;
+    padding: 2rem 1rem;
   }
 
   footer {
@@ -1306,5 +1322,384 @@ footer ul li {
     width: 30px;
     height: 30px;
     font-size: 1rem;
+  }
+}
+
+
+/* ========================= */
+/* RESPONSIVE SERVICES       */
+/* ========================= */
+@media (max-width: 1024px) {
+  .services-text h3 {
+    font-size: 2.5rem;
+  }
+
+  .services-text p {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .plano {
+    width: 40%;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    width: 90%;
+    max-height: none;
+  }
+
+  .bathrooms {
+    top: 5rem;
+    left: -9.5rem;
+  }
+
+  .bathrooms-line {
+    top: 6rem;
+    left: -1.9rem;
+    width: 55%;
+  }
+
+  .bedrooms {
+    bottom: 3rem;
+    left: -9.5rem;
+  }
+
+  .bedrooms-line {
+    bottom: 4rem;
+    left: -2.4rem;
+    width: 30%;
+  }
+
+  .kitchen {
+    top: 6.5rem;
+    right: -9.5rem;
+  }
+
+  .kitchen-line {
+    top: 7.5rem;
+    right: -3.8rem;
+    width: 50%;
+  }
+
+  .living {
+    bottom: 4rem;
+    right: -10.5rem;
+  }
+
+  .living-line {
+    bottom: 4.9rem;
+    right: -2.7rem;
+    width: 40%;
+  }
+
+  .workstations {
+    top: 5.5rem;
+    left: -13rem;
+  }
+
+  .workstations-line {
+    top: 6.4rem;
+    left: -6rem;
+    width: 80%;
+  }
+
+  .floors {
+    top: 6.6rem;
+    right: -15rem;
+  }
+
+  .floors-line {
+    top: 7.7rem;
+    right: -6rem;
+    width: 45%;
+  }
+
+  .meeting {
+    bottom: 5rem;
+    left: -13rem;
+  }
+
+  .meeting-line {
+    bottom: 6rem;
+    left: -4.7rem;
+    width: 70%;
+  }
+
+  .common {
+    bottom: 4rem;
+    right: -12rem;
+  }
+
+  .common-line {
+    bottom: 4.8rem;
+    right: -2.8rem;
+    width: 28%;
+  }
+
+  .modal-image {
+    width: 100%;
+  }
+
+  .modal-details {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .modal-details h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-page h2 {
+    font-size: 2.5rem;
+  }
+
+  .services-page p {
+    font-size: 1.5rem;
+  }
+
+  .services-text h3 {
+    font-size: 2rem;
+  }
+
+  .services-text p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .plano {
+    width: 40%;
+  }
+
+  .bathrooms {
+    top: 4.5rem;
+    left: -6rem;
+  }
+
+  .bathrooms-line {
+    top: 5rem;
+    left: -1.5rem;
+    width: 60%;
+  }
+
+  .bedrooms {
+    bottom: 1.5rem;
+    left: -6rem;
+  }
+
+  .bedrooms-line {
+    bottom: 2.2rem;
+    left: -2.4rem;
+    width: 40%;
+  }
+
+  .kitchen {
+    top: 4.8rem;
+    right: -5rem;
+  }
+
+  .kitchen-line {
+    top: 5.2rem;
+    right: -3.5rem;
+    width: 60%;
+  }
+
+  .living {
+    bottom: 1.6rem;
+    right: -7rem;
+  }
+
+  .living-line {
+    bottom: 2.2rem;
+    right: -2.7rem;
+    width: 50%;
+  }
+
+  .workstations {
+    top: 4.5rem;
+    left: -7rem;
+  }
+
+  .workstations-line {
+    top: 5.2rem;
+    left: -3rem;
+    width: 90%;
+  }
+
+  .floors {
+    top: 4.5rem;
+    right: -8.5rem;
+  }
+
+  .floors-line {
+    top: 5.5rem;
+    right: -1rem;
+    width: 30%;
+  }
+
+  .meeting {
+    bottom: 1.3rem;
+    left: -7rem;
+  }
+
+  .meeting-line {
+    bottom: 2rem;
+    left: -4.7rem;
+    width: 100%;
+  }
+
+  .common {
+    bottom: 1.5rem;
+    right: -8rem;
+  }
+
+  .common-line {
+    bottom: 2.1rem;
+    right: -2.8rem;
+    width: 45%;
+  }
+
+  .label {
+    font-size: 0.7rem;
+    padding: 0.4em 0.8em;
+    max-width: 120px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    width: 90%;
+    max-height: 80vh;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+
+  .modal-content-div {
+    flex-direction: column;
+  }
+
+  .modal-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .modal-details h3 {
+    font-size: 1.6rem;
+  }
+
+  .modal-details ul li {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ========================= */
+/* RESPONSIVE GALLERY        */
+/* ========================= */
+@media (max-width: 1024px) {
+  .gallery-page h2 {
+    font-size: 3rem;
+  }
+
+  .gallery-container {
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .gallery-images-container {
+    padding: 0 2rem;
+  }
+
+  .gallery-images-container h3 {
+    font-size: 2rem;
+  }
+
+  .gallery-images-container h3::after {
+    width: 8%;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-page {
+    height: auto;
+    padding: 3rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .gallery-page h2 {
+    font-size: 2rem;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .gallery-images-container {
+    padding: 0 1rem;
+  }
+
+  .gallery-images-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .gallery-img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .gallery-images-container h3::after {
+    width: 10%;
+  }
+}
+
+
+/* ========================= */
+/* RESPONSIVE CONTACT        */
+/* ========================= */
+@media (max-width: 1024px) {
+  .contact-page h2 {
+    font-size: 2.5rem;
+  }
+
+  .forms-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .form-contact {
+    width: 60%;
+  }
+
+  .form-page-phrase {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-page {
+    height: auto;
+    padding: 3rem 1rem;
+    font-size: 1.6rem;
+  }
+
+  .form-page h2 {
+    font-size: 2rem;
+  }
+
+  .forms-container {
+    gap: 2rem;
+  }
+
+  .form-contact {
+    width: 100%;
+  }
+
+  .form-page-phrase {
+    font-size: 1.2rem;
   }
 }
