@@ -1572,8 +1572,9 @@ footer ul li {
   .modal-content {
     flex-direction: column;
     width: 90%;
-    max-height: 80vh;
+    max-height: 90vh;
     animation: fadeIn 0.3s ease-in-out;
+    overflow: auto;
   }
 
 
@@ -1692,7 +1693,7 @@ footer ul li {
   }
 
   .forms-container {
-    gap: 2rem;
+    gap: 4rem;
   }
 
   .form-contact {

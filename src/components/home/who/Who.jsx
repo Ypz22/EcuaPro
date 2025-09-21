@@ -1,7 +1,9 @@
 import React from "react";
 import foto from "@/assets/FOTO3.jpg"
+import { useNavigate } from "react-router-dom";
 
 export default function Who() {
+    const navigate = useNavigate();
     return (
         <section className="who">
             <div className="content-who-img">
@@ -19,7 +21,7 @@ export default function Who() {
                     sure that cleaning isn't your concern. To make the experience completely
                     stress-free, we bring our own cleaning products and equipment, unless
                     you prefer otherwise.</p>
-                <button>CHECK OUT OUR SERVICES</button>
+                <button onClick={() => { navigate("/services") }}>CHECK OUT OUR SERVICES</button>
             </div>
         </section>
     );
