@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Casa3D from "@/assets/Casa3D.png";
+import Casa3D from "@/assets/CASA3D.png";
 import Office3D from "@/assets/FOTOOFICINA.png";
 import Modal from "./Modal";
 import modalBano from "@/assets/modalBano.jpg";
