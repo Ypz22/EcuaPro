@@ -17,7 +17,7 @@ export default function Contact() {
 
     const sendWhatsApp = (e) => {
         e.preventDefault();
-        const phoneNumber = "593979395043";
+        const phoneNumber = "19295948111";
         const text = `Hola, soy ${formWhatsapp.name}. Tema: ${formWhatsapp.subject}. Mensaje: ${formWhatsapp.message}`;
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
         window.open(url, "_blank");
@@ -25,7 +25,7 @@ export default function Contact() {
 
     const sendMail = (e) => {
         e.preventDefault();
-        const email = "jeffersonyepez621@gmail.com";
+        const email = "Sanymela12@gmail.com";
         const subject = `Contacto: ${formMail.subject}`;
         const body = `Hola, soy ${formMail.name}.\n\n${formMail.message}`;
         const url = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
