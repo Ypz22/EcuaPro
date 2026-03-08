@@ -41,7 +41,9 @@ The main landing section provides a strong first impression with high-quality vi
 
 Image location:
 
-![EcuaPro Home](./src/assets/FOTOHOME.png)
+![EcuaPro Home](./public/readme/home.png)
+
+![EcuaPro Home](./public/readme/home1.png)
 
 ---
 
@@ -51,7 +53,7 @@ One of the most powerful features of the platform, demonstrating the effectivene
 
 Image location:
 
-![Before and After](./src/assets/GALERIA/bano1.png)
+![Before and After](./public/readme/home2.png)
 
 ---
 
@@ -66,17 +68,15 @@ Detailed presentation of service categories such as:
 
 Image location:
 
-![Services](./src/assets/FOTOSERVICIOS.png)
+![Services](./public/readme/services.png)
+
+![Services](./public/readme/services1.png)
 
 ---
 
 ### Projects Gallery
 
 A visual portfolio showcasing completed cleaning projects and transformations.
-
-Image location:
-
-![Gallery](./src/assets/FOTOGALLERY.png)
 
 ---
 
