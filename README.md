@@ -1,145 +1,178 @@
 # EcuaPro
 
-Live Demo: [https://ecuapro.vercel.app](https://ecua-pro.vercel.app/)
+Production: [ecua-pro.vercel.app](https://ecua-pro.vercel.app/)
 
-EcuaPro is a professional web platform designed for the promotion and management of residential and commercial cleaning services. The application provides a visually rich user experience that allows visitors to explore services, view before-and-after transformations, and easily contact the professional cleaning team.
+EcuaPro is a professional cleaning services website built to promote residential and office cleaning solutions through a modern, visual, and responsive experience.
 
-The platform focuses on presenting services in a modern, elegant, and responsive interface that works seamlessly across devices.
+The project focuses on clear service presentation, before-and-after proof of work, and direct contact options that help potential clients quickly understand the value of the service and reach out with minimal friction.
 
----
+## Overview
 
-## Technologies Used
+EcuaPro was designed around three main goals:
+
+- present cleaning services in a clear and professional way
+- demonstrate service quality through visual comparisons
+- make customer contact fast and accessible
+
+Rather than acting as a generic landing page, the project organizes services, gallery content, and contact flows into a structured browsing experience for both residential and business customers.
+
+## Main Features
+
+- Professional landing page for a cleaning services brand
+- Dedicated service catalog for home and office cleaning
+- Interactive service detail modals
+- Before-and-after cleaning showcase
+- Dedicated gallery page with transformation examples
+- Direct WhatsApp contact flow
+- Direct email contact flow
+- Responsive design for desktop, tablet, and mobile
+
+## Tech Stack
 
 ### Frontend
 
-- React 18  
-Modern JavaScript library used to build a modular and reactive user interface.
+- React 19
+- Vite
+- React Router DOM
+- Lucide React
+- React Icons
+- React Compare Slider
+- React Compare Image
+- React Before After Slider Component
 
-- Vite  
-Next-generation build tool that provides extremely fast development and optimized production builds.
+### Development Tools
 
-- Modular Components  
-Architecture based on reusable components for sections such as Hero, Gallery, Services, and Contact.
+- ESLint
 
-- Modern CSS  
-Responsive and visually polished design ensuring smooth navigation across desktop, tablet, and mobile devices.
+## Project Structure
 
----
+```text
+src
+├── assets              # Images, logos, 3D visuals, and before/after photos
+├── components
+│   ├── contact         # Contact forms and communication flows
+│   ├── gallery         # Gallery presentation
+│   ├── home            # Landing page sections
+│   ├── layout          # Header, footer, layout, scroll behavior
+│   └── services        # Service listing and modal details
+├── App.jsx             # Route configuration
+├── App.css             # Global app styles
+└── main.jsx            # App entry point
+```
 
-## Development Tools
+## Main Pages
 
-- ESLint  
-Strict configuration used to maintain code quality, consistency, and best practices across the project.
+- `Home`: brand introduction, service highlights, and before/after section
+- `Services`: categorized cleaning services for homes and offices
+- `Gallery`: real examples of cleaning transformations
+- `Contact`: direct customer communication through WhatsApp and email
 
----
+## Service Areas Covered
 
-## Application Gallery
+The project presents cleaning services such as:
 
-Below are some of the key sections that showcase the main features of the platform.
+- Bathrooms
+- Bedrooms
+- Kitchens
+- Living rooms
+- Workstations
+- Floors and windows
+- Meeting areas
+- Common areas
 
-### Home Page (Hero Section)
+This structure makes the offer easier to understand for both household and commercial clients.
 
-The main landing section provides a strong first impression with high-quality visuals and a clear service presentation.
+## Contact Flows
 
-Image location:
+EcuaPro includes two simple customer contact options:
+
+- WhatsApp message generation
+- Email message generation
+
+These flows are handled directly from the frontend, making the site lightweight and easy to deploy while still giving users immediate ways to reach the business.
+
+## Screenshots
+
+### Home
 
 ![EcuaPro Home](./public/readme/home.png)
 
 ![EcuaPro Home](./public/readme/home1.png)
 
----
-
 ### Before and After Comparison
-
-One of the most powerful features of the platform, demonstrating the effectiveness of the cleaning services through visual comparisons.
-
-Image location:
 
 ![Before and After](./public/readme/home2.png)
 
----
-
-### Services Catalog
-
-Detailed presentation of service categories such as:
-
-- Common Areas
-- Kitchen Cleaning
-- Bedroom Cleaning
-- Bathroom Cleaning
-
-Image location:
+### Services
 
 ![Services](./public/readme/services.png)
 
 ![Services](./public/readme/services1.png)
 
----
+## Local Development
 
-### Projects Gallery
+### 1. Clone the repository
 
-A visual portfolio showcasing completed cleaning projects and transformations.
-
----
-
-## Project Structure
-```
-src/
-├── assets/
-│   └── images, logos, and before/after cleaning photos
-│
-├── components/
-│   └── page sections (Hero, Who, Services, Contact, etc.)
-│
-│   ├── layout/
-│   │   └── structural elements (Header, Footer, ScrollTop)
-│   │
-│   ├── home/
-│   │   └── landing page logic and sections
-│   │
-│   └── gallery/
-│       └── project visualization components
-│
-├── App.jsx
-│   └── main application component
-│
-└── main.jsx
-    └── application entry point and React rendering
+```bash
+git clone https://github.com/Ypz22/EcuaPro.git
+cd EcuaPro
 ```
 
----
+### 2. Install dependencies
 
-## Installation
-
-Clone the repository
-
-git clone https://github.com/your-username/ecuapro.git
-cd ecuapro
-
-Install dependencies
-
+```bash
 npm install
+```
 
-Start development server
+### 3. Start the development server
 
+```bash
 npm run dev
+```
 
-Build production version
+### 4. Build for production
 
+```bash
 npm run build
+```
 
----
+### 5. Preview the production build
 
-## Future Improvements
+```bash
+npm run preview
+```
+
+## Available Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Build production version
+npm run preview  # Preview production build
+npm run lint     # Run ESLint
+```
+
+## Why This Project Matters
+
+EcuaPro stands out because it combines:
+
+- service-focused business presentation
+- strong visual proof through before-and-after content
+- clear navigation between marketing sections
+- fast direct-contact flows without unnecessary complexity
+- a responsive structure suitable for real customer use
+
+## Possible Future Improvements
 
 - Online booking system for cleaning services
+- Quote request workflow
 - Customer dashboard
-- Payment integration
-- Automated service scheduling
-- SEO optimization
+- Service scheduling automation
+- Deeper SEO and analytics integration
 
----
+## Author
+
+Jefferson Yepez
 
 ## License
 
-This project is the property of EcuaPro. Any reproduction, distribution, or modification without prior authorization is strictly prohibited.
+Private project.
