@@ -1,42 +1,50 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import logo from "@/assets/LOGO.png";
+import { NAV_ITEMS } from "@/data/siteContent";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 export default function Header() {
-    const navigate = useNavigate();
-    const [menuOpen, setMenuOpen] = useState(false);
-    const [initialized, setInitialized] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const { pathname } = useLocation();
 
-    useEffect(() => {
-        setInitialized(true);
-    }, []);
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
-    return (
-        <header>
-            <img
-                onClick={() => navigate("/home")}
-                className="logo"
-                src={logo}
-                alt="logo Ecua Pro"
-            />
+  return (
+    <header>
+      <Link className="logo-link" to="/" aria-label="Go to EcuaPro home">
+        <img className="logo" src={logo} alt="Ecua Pro logo" />
+      </Link>
 
-            <div
-                className={`hamburger ${menuOpen ? "active" : ""}`}
-                onClick={() => setMenuOpen(!menuOpen)}
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <button
+        type="button"
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={() => setMenuOpen((current) => !current)}
+        aria-expanded={menuOpen}
+        aria-controls="main-navigation"
+        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
 
-            <nav className={`${menuOpen ? "open" : ""} ${initialized ? "animated" : ""}`}>
-                <ul>
-                    <li onClick={() => setMenuOpen(false) || navigate("/home")}>HOME</li>
-                    <li onClick={() => setMenuOpen(false) || navigate("/services")}>SERVICE</li>
-                    <li onClick={() => setMenuOpen(false) || navigate("/gallery")}>GALLERY</li>
-                    <li onClick={() => setMenuOpen(false) || navigate("/contact")}>CONTACT US</li>
-                </ul>
-            </nav>
-        </header>
-    );
+      <nav id="main-navigation" className={menuOpen ? "open" : ""}>
+        <ul>
+          {NAV_ITEMS.map((item) => (
+            <li key={item.path}>
+              <NavLink
+                to={item.path}
+                end={item.path === "/"}
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
 }

@@ -1,31 +1,36 @@
-import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Layout from './components/layout/Layout'
-import Home from './components/home/Home'
-import Contact from './components/contact/Contact'
-import ScrollToTop from './components/layout/ScrollTop'
-import Gallery from './components/gallery/Gallery'
-import Services from './components/services/Services'
+import "./App.css";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Contact from "./components/contact/Contact";
+import Gallery from "./components/gallery/Gallery";
+import Home from "./components/home/Home";
+import Layout from "./components/layout/Layout";
+import ScrollToTop from "./components/layout/ScrollTop";
+import Services from "./components/services/Services";
+
+const APP_ROUTES = [
+  { path: "/home", element: <Home /> },
+  { path: "/contact", element: <Contact /> },
+  { path: "/gallery", element: <Gallery /> },
+  { path: "/services", element: <Services /> },
+];
 
 function App() {
-
   return (
-    <div>
-      <Router>
+    <BrowserRouter>
+      <div>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path='*' element={<Home />} />
             <Route index element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path='/gallery' element={<Gallery />} />
-            <Route path="/services" element={<Services />} />
+            {APP_ROUTES.map((route) => (
+              <Route key={route.path} path={route.path} element={route.element} />
+            ))}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
-      </Router>
-    </div>
-  )
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
